@@ -10,35 +10,58 @@
 
 <body>
     <div class="full">
-        <form action="">
-            <div>Username<input class="space" type="username"></div>
-            <div>Password<input class="space" type="password"></div>
-            <div>fullName<input class="space" type="name"></div>
-            <div>LastName<input class="space" type="name"></div>
-            <div>Gender<select class="space" name="" id="">
-                    <option value="">Select</option>
-                    <option value="">Male</option>
-                    <option value="">Female</option>
-                    <option value="">Trancegender</option>
+        <form class="form">
+            <div>
+                <label for="username">username</label>
+                <input class="space" id="username" type="username" placeholder="enter username">
+            </div>
+            <div>
+                <label for="Password">Password</label>
+                <input class="space" id="Password" type="password" placeholder="Enter Password">
+            </div>
+            <div>
+                <label for="fullName">fullName</label>
+                <input class="space" id="fullName" type="name" placeholder="fullName">
+            </div>
+            <div>
+                <label for="LastName">LastName</label>
+                <input id="LastName" class="space" type="name" placeholder="LastName">
+            </div>
+            <div>
+                <label for="Gender">Gender</label>
+                <select class="space" name="" id="Gender">
+                    <option value="none">Select</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="TranceG">Trancegender</option>
                 </select>
             </div>
-            <div>Date Of Birth<input class="space" type="date"></div>
-            <div>Email<input class="space" type="email"></div>
-            <div>Passport
-                <input class="space" type="radio"><label for="">Yes</label>
-                <input type="radio"><label for="">No</label>
+            <div>
+                <label for="Date Of Birth">Date Of Birth</label>
+                <input id="DOB" class="space" type="date">
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input id="Email" class="space" type="email">
+            </div>
+            <div><label for="Passport">Passport</label>
+                <input id="radioBtn" type="radio" value="available" name="options"><label for="Passport">Yes</label>
+                <input  type="radio" value="NotAvailable" name="options"><label for="Passport">No</label>
             </div>
             <div class="align">Education
                 <div class="space">
-                    <input type="checkbox"><label for="">10th</label>
-                    <input type="checkbox"><label for="">Inter</label>
-                    <input type="checkbox"><label for="">Under Graduation</label>
+                    <input type="checkbox" name="option"><label for="checkbox1">10th</label>
+                    <input type="checkbox" name="option"><label for="checkbox2" >Inter</label>
+                    <input type="checkbox" name="option"><label for="checkbox3">Under Graduation</label>
                 </div>
             </div>
             <div>Passport Photo<input class="space" type="file"></div>
-            <div class="submit"><input type="submit"></div>
+            <div class="submit">
+                <input id="submit" type="button" value="submit">
+            </div>
         </form>
     </div>
+    <script src="/form.js"></script>
 </body>
 
 </html>
