@@ -10,22 +10,26 @@
 
 <body>
     <div class="full">
-        <form class="form">
+        <form id="form">
             <div>
                 <label for="username">username</label>
                 <input class="space" id="username" type="username" placeholder="enter username">
+                <p id="username_error"></p>
             </div>
             <div>
                 <label for="Password">Password</label>
                 <input class="space" id="Password" type="password" placeholder="Enter Password">
+                <p id="Password_error"></p>
             </div>
             <div>
                 <label for="fullName">fullName</label>
                 <input class="space" id="fullName" type="name" placeholder="fullName">
+                <p id="fullName_error"></p>
             </div>
             <div>
                 <label for="LastName">LastName</label>
                 <input id="LastName" class="space" type="name" placeholder="LastName">
+                <p id="LastName_error"></p>
             </div>
             <div>
                 <label for="Gender">Gender</label>
@@ -35,24 +39,29 @@
                     <option value="F">Female</option>
                     <option value="TranceG">Trancegender</option>
                 </select>
+                <p id="Gender_error"></p>
             </div>
             <div>
                 <label for="Date Of Birth">Date Of Birth</label>
-                <input id="DOB" class="space" type="date">
+                <input id="DOB" class="space" value="Enterd" type="date">
+                <p id="DOB_error"></p>
             </div>
             <div>
                 <label for="Email">Email</label>
                 <input id="Email" class="space" type="email">
+                <p id="Email_error"></p>
             </div>
             <div><label for="Passport">Passport</label>
                 <input id="radioBtn" type="radio" value="available" name="options"><label for="Passport">Yes</label>
                 <input  type="radio" value="NotAvailable" name="options"><label for="Passport">No</label>
+                <p id="passport_error"></p>
             </div>
             <div class="align">Education
                 <div class="space">
-                    <input type="checkbox" name="option"><label for="checkbox1">10th</label>
-                    <input type="checkbox" name="option"><label for="checkbox2" >Inter</label>
-                    <input type="checkbox" name="option"><label for="checkbox3">Under Graduation</label>
+                    <input type="checkbox" name="Education" value="10th"><label for="checkbox1">10th</label>
+                    <input type="checkbox" name="Education" value="inter"><label for="checkbox2" >Inter</label>
+                    <input type="checkbox" name="Education" value="UG"><label for="checkbox3">Under Graduation</label>
+                    <p id="Education_error"></p>
                 </div>
             </div>
             <div>Passport Photo<input class="space" type="file"></div>
